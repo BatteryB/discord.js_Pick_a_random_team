@@ -8,7 +8,7 @@
 
 <a href="https://discord.com/oauth2/authorize?client_id=1178255413641216000&permissions=8&scope=bot" target="_blank"><img src="https://img.shields.io/badge/Invite BatteryBot-512BD4?style=for-the-badge&logo=discord&logoColor=white"/></a>
 
-명령어 / Command
-/인원추가 (이름)
-/인원확인
+명령어 / Command<br><br>
+/인원추가 (이름)<br>
+/인원확인<br>
 /인원뽑기 (팀 갯수)
