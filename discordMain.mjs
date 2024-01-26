@@ -25,6 +25,21 @@ client.on('interactionCreate', async interaction => {
         }
     }
 
+    if (interaction.commandName === '인원제외') {
+        let memberName = interaction.options.getString('이름');
+        if (!memberName) {
+            await interaction.reply({ content: '제외 할 사람의 이름을 적어주세요.', ephemeral: true });
+        } else {
+            let JoinWhether = member.indexOf(memberName);
+            if (JoinWhether !== -1) {
+                member.splice(JoinWhether, 1);
+                await interaction.reply({ content: memberName + '이(가) 제외 되었습니다.', ephemeral: true });
+            } else {
+                await interaction.reply({ content: memberName + '은(는) 참여가 되어있지 않습니다.', ephemeral: true });
+            }
+        }
+    }
+
     if (interaction.commandName === '인원확인') {
         if (member.length > 0) {
             let memberList = member.join('\n');
