@@ -10,5 +10,6 @@
 
 명령어 / Command<br><br>
 /인원추가 이름:(String)<br>
+/인원제외 이름:(String)<br>
 /인원확인<br>
 /인원뽑기 팀_갯수:(Number)
